@@ -1,0 +1,9 @@
+version: '2.2'
+
+services:
+  uci_upload:
+    image: uci_upload
+    init: true
+    build: .
+    ports:
+      - "3001:3001"
